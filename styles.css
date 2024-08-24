@@ -42,8 +42,6 @@
     font-weight: 700;
     font-style: normal;
 }
-
-
 .icon-btn {
     position: absolute;
     bottom: 12px;
@@ -54,24 +52,27 @@
     margin: 36px 120px 0px 120px;
     display: flex;
     flex-direction: row;
+    background-color: yellow
+    ;
 }
 
 .content1-div {
-    width: 50%;
+    width: 610px;
 }
 
 .h1 {
+    margin: 134px 0px 0px 0px;
     width: 610px;
     font-size: 55px;
     line-height: 120%;
     color: #424956;
-    margin: 133px 0px 0px 0px;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 .hero-header-text {
+    width: 610px;
     font-size: 18px;
     line-height: 150%;
     color: #4D515C;
@@ -99,5 +100,42 @@
 }
 
 .content2-div {
-    width: 50%;
+    width: 590px;
+}
+
+.second-block-div {
+    margin: 120px 120px 0px 120px;
+    display: flex;
+    flex-direction: row;
+}
+.second-h2-div {
+    width: 610px;
+    background-color: aqua;
+}
+.second-h2 {
+    width: 387px;
+    margin: 0px 0px 0px 0px;
+    font-size: 48px;
+    line-height: 120%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #424956;
+}
+
+.second-text-div {
+    width: 590px;
+    background-color: pink;
+}
+.second-text {
+    width: 590px;
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+    line-height: 150%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #4D515C;
 }
