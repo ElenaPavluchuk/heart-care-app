@@ -1,22 +1,103 @@
-.main-div {
+.navbar-div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 20px 120px 0px 120px;
 }
 
-.div-button {
+.navbar-btn-div {
+    display: flex;
+    gap: 84px;
+}
+.navbar-btn {
+    background-color: white;
+    border: none;
+    color: #424956;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.call-button-div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 198px;
-    height: 38px;
-    border: #B71921 solid;
-    border-radius: 2px;
+    position: relative;
+  
 }
-.main-button {
+.call-btn {
     background-color: white;
-    border: none;
+    border: 1px solid #B71921;
+    border-radius: 2px;
     color: #B71921;
-    padding-left:40px;
+    padding: 12px 68px 12px 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.icon-btn {
+    position: absolute;
+    bottom: 12px;
+    padding-left: 138px;
+}
+
+.hero-header-div {
+    margin: 36px 120px 0px 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content1-div {
+    width: 50%;
+}
+
+.h1 {
+    width: 610px;
+    font-size: 55px;
+    line-height: 120%;
+    color: #424956;
+    margin: 133px 0px 0px 0px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.hero-header-text {
+    font-size: 18px;
+    line-height: 150%;
+    color: #4D515C;
+    margin: 36px 0px 0px 0px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-btn {
+    background-color: #B71921;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 16px 48px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin: 48px 0px 0px 0px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.content2-div {
+    width: 50%;
 }
