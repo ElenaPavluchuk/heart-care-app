@@ -1,4 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .navbar-div {
+    background-color: pink;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,7 +68,6 @@
 
 .h1 {
     margin: 134px 0px 0px 0px;
-    width: 610px;
     font-size: 55px;
     line-height: 120%;
     color: #424956;
@@ -72,7 +77,6 @@
     font-style: normal;
 }
 .hero-header-text {
-    width: 610px;
     font-size: 18px;
     line-height: 150%;
     color: #4D515C;
@@ -114,7 +118,6 @@
 }
 .second-h2 {
     width: 387px;
-    margin: 0px 0px 0px 0px;
     font-size: 48px;
     line-height: 120%;
     font-family: "Oswald", sans-serif;
@@ -123,14 +126,11 @@
     font-style: normal;
     color: #424956;
 }
-
 .second-text-div {
     width: 590px;
     background-color: pink;
 }
 .second-text {
-    width: 590px;
-    margin: 0px 0px 0px 0px;
     font-size: 20px;
     line-height: 150%;
     font-family: "Raleway", sans-serif;
