@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: 0;
 }
 
 body {
@@ -61,15 +62,16 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 36px;
+    gap: 20px;
     
 }
 
 .content1-div {
-    width: 610px;
+    width: 590px;
 }
 
 .h1 {
-    margin: 134px 0px 0px 0px;
+    margin-top: 90px;
     font-size: 55px;
     line-height: 120%;
     color: #424956;
@@ -79,10 +81,10 @@ body {
     font-style: normal;
 }
 .hero-header-text {
+    margin-top: 48px;
     font-size: 18px;
     line-height: 150%;
     color: #4D515C;
-    margin: 36px 0px 0px 0px;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -90,15 +92,15 @@ body {
 }
 
 .hero-btn {
+    margin-top: 56px;
     background-color: #B71921;
     border: none;
     border-radius: 2px;
-    color: white;
     padding: 16px 48px;
-    text-align: center;
     display: inline-block;
+    text-align: center;
+    color: white;
     font-size: 14px;
-    margin: 48px 0px 0px 0px;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
