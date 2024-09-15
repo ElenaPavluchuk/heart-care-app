@@ -60,6 +60,7 @@ body {
 
 
 .hero-header-div {
+    background-color: pink;
     display: flex;
     flex-direction: row;
     margin-top: 36px;
@@ -67,9 +68,13 @@ body {
 }
 .content1-div {
     display: inline-block;
+    background-color: palegreen;
+}
+.h1-div {
+    margin-top: 90px;
 }
 h1 {
-    margin-top: 90px;
+    background-color: gainsboro;
     font-size: 55px;
     line-height: 120%;
     color: #424956;
@@ -78,8 +83,11 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
-.hero-header-text {
+.m-text-div {
     margin-top: 48px;
+}
+.body-m-text {
+    background-color: tomato;
     font-size: 18px;
     line-height: 150%;
     color: #4D515C;
@@ -104,17 +112,20 @@ h1 {
     font-style: normal;
 }
 .content2-img {
+    background-color: gray;
     width: 590px;
 }
 
 
 .second-block-div {
+    background-color: pink;
     display: flex;
     flex-direction: row;
     margin-top: 120px;
     gap: 305px;
 }
 h2 {
+    background-color: tomato;
     width: 305px;
     font-size: 48px;
     line-height: 120%;
@@ -124,8 +135,11 @@ h2 {
     font-style: normal;
     color: #424956;
 }
-.second-text {
+.l-text-div {
     width: 590px;
+}
+.body-l-text {
+    background-color: palegoldenrod;
     font-size: 20px;
     line-height: 150%;
     font-family: "Raleway", sans-serif;
@@ -139,16 +153,105 @@ h2 {
 .third-h2-div {
     display: flex;
     margin-top: 120px;
-    background-color: pink;
+    background-color: papayawhip;
 }
 
 
+.third-1-div {
+    background-color: pink;
+    display: flex;
+    gap: 325px;
 
+    margin-top: 48px;
 
+}
+
+.third-content1-div {
+    background-color: palegreen;
+
+}
+
+.third-img-1 {
+    width: 285px;
+}
+
+.container1 {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    margin-top: 16px;
+    
+}
+.container-1-text {
+    background-color: azure;
+    width: 183px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+   
+}
+
+.subtitle-2 {
+    font-size: 18px;
+    line-height: 120%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #424956;
+}
+.body-s-text {
+    font-size: 16px;
+    line-height: 150%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #4D515C;
+}
+.read-more-btn-div {
+    display: inline-block;
+    text-align: center;
+}
+.reaed-more-btn {
+    background-color: white;
+    border: none;
+    color: #B71921;
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.third-content2-div {
+    background-color: palegreen;
+
+}
+.third-img-2 {
+    width: 590px;
+}
+.container2 {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    gap: 326px;
+    margin-top: 16px;
+}
+.container-2-text {
+    background-color: azure;
+    width: 183px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 .div1 {
     background-color: pink;
     display: flex;
     margin-top: 50px;
 }
+
 
