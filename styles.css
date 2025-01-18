@@ -58,19 +58,25 @@ body {
 }
 
 
-.hero-section {
+.hero-section-1 {
     display: flex;
     flex-direction: row;
     margin-top: 36px;
     gap: 20px;
 }
-.hero-info-container {
+
+.hero-container-1 {
     display: flex;
     flex-direction: column;
 }
-.hero-title {
-    margin-top: 90px;
+
+.hero-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 84px;
 }
+
 h1 {
     font-size: 55px;
     line-height: 120%;
@@ -80,10 +86,8 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
-.hero-description-content {
-    margin-top: 48px;
-}
-.body-m-text {
+
+.text-style-body-m {
     font-size: 18px;
     line-height: 150%;
     color: #4D515C;
@@ -92,8 +96,12 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
-.how-it-work-btn {
+
+.how-it-work-btn-container {
     margin-top: 56px;
+}
+
+.how-it-work-btn {
     background-color: #B71921;
     border: none;
     border-radius: 2px;
@@ -108,20 +116,27 @@ h1 {
     font-weight: 700;
     font-style: normal;
 }
-.hero-img {
+
+.hero-container-2 {
+    width: 100%;
+}
+
+.hero-image {
     width: 590px;
 }
 
 
-.our-mission-section {
+.section-2 {
     display: flex;
     flex-direction: row;
     margin-top: 120px;
     gap: 305px;
 }
-.our-mission-title {
+
+.title-section-2-container {
     width: 305px;
 }
+
 h2 {
     font-size: 48px;
     line-height: 120%;
@@ -131,10 +146,12 @@ h2 {
     font-style: normal;
     color: #424956;
 }
-.our-mission-description {
+
+.description-section-2-container {
     width: 590px;
 }
-.body-l-text {
+
+.text-style-body-l {
     font-size: 20px;
     line-height: 150%;
     font-family: "Raleway", sans-serif;
@@ -145,33 +162,66 @@ h2 {
 }
 
 
-.we-offer-title {
-    display: inline-block;
+.section-3 {
     margin-top: 120px;
-    width: 305px;
-}
-.container-1 {
-    display: flex;
-    gap: 325px;
-    margin-top: 48px;
 }
 
-.narrow-img {
+.grid-container-section-3 {
+    margin-top: 48px;
+    display: grid;
+    gap: 40px 20px;
+    grid-template-columns: repeat(4, 285px);
+    grid-template-rows: repeat(3, 431px);
+    grid-template-areas: 
+    "card-1 . card-2 card-2"
+    ". card-3 card-4 card-5"
+    "card-6 . card-7 card-7";
+}
+
+.card-1 {
+    grid-area: card-1;
+}
+
+.card-2 {
+    grid-area: card-2;
+}
+
+.card-3 {
+    grid-area: card-3;
+}
+
+.card-4 {
+    grid-area: card-4;
+}
+
+.card-5 {
+    grid-area: card-5;
+}
+
+.card-6 {
+    grid-area: card-6;
+}
+
+.card-7 {
+    grid-area: card-7;
+}
+
+.narrow-image {
     width: 285px;
 }
-.narrow-text-container {
-    display: flex;
-    flex-direction: row;
-    gap: 21px;
-    margin-top: 16px;
+
+.wide-image {
+    width: 590px;
 }
-.narrow-text-content {
-    width: 183px;
+
+.card-text-wrapper {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-top: 16px;
 }
-.subtitle-2 {
+
+.text-style-subtitle-2 {
     font-size: 18px;
     line-height: 120%;
     font-family: "Raleway", sans-serif;
@@ -180,7 +230,8 @@ h2 {
     font-style: normal;
     color: #424956;
 }
-.body-s-text {
+
+.text-style-body-s {
     font-size: 16px;
     line-height: 150%;
     font-family: "Raleway", sans-serif;
@@ -189,6 +240,11 @@ h2 {
     font-style: normal;
     color: #4D515C;
 }
+
+.read-more-btn-container {
+    margin-top: 20px;
+}
+
 .read-more-btn {
     display: inline-block;
     text-align: center;
@@ -203,34 +259,8 @@ h2 {
     font-style: normal;
 }
 
-.wide-img {
-    width: 590px;
-}
-.wide-text-container {
-    display: flex;
-    flex-direction: row;
-    gap: 326px;
-    margin-top: 16px;
-}
-.wide-text-content {
-    width: 183px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
 
-.container-2 {
-    display: flex;
-    gap: 20px;
-    margin-top: 32px;
-    margin-left: 305px;
-}
 
-.container-3 {
-    display: flex;
-    gap: 325px;
-    margin-top: 20px;
-}
 
 
 .footer {
