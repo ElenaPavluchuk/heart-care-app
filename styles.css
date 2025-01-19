@@ -4,22 +4,20 @@
     box-sizing: 0;
 }
 
-body {
-    margin: 0px 120px 0px 120px;
-}
 
-
-.navbar-container {
+.section-navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    margin: 20px 120px;
 }
-.navbar-btn-content {
+
+.navbar-btn-container {
     display: flex;
     gap: 84px;
 }
+
 .navbar-btn {
     background-color: white;
     border: none;
@@ -30,13 +28,15 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-.call-btn-content {
+
+.call-btn-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
   
 }
+
 .call-btn {
     background-color: white;
     border: 1px solid #B71921;
@@ -51,17 +51,19 @@ body {
     font-weight: 700;
     font-style: normal;
 }
-.icon-btn {
+
+.icon-call-btn {
     position: absolute;
     bottom: 12px;
     padding-left: 138px;
 }
 
 
+
 .hero-section-1 {
     display: flex;
     flex-direction: row;
-    margin-top: 36px;
+    margin: 0px 120px;
     gap: 20px;
 }
 
@@ -126,10 +128,11 @@ h1 {
 }
 
 
+
 .section-2 {
     display: flex;
     flex-direction: row;
-    margin-top: 120px;
+    margin: 120px 120px 0px 120px;
     gap: 305px;
 }
 
@@ -162,8 +165,9 @@ h2 {
 }
 
 
+
 .section-3 {
-    margin-top: 120px;
+    margin: 120px 120px 0px 120px;
 }
 
 .grid-container-section-3 {
@@ -261,15 +265,13 @@ h2 {
 
 
 
-
-
-.footer {
+.section-footer {
     margin-top: 120px;
     display: flex;
     flex-direction: row;
-    padding: 32px 0px;
-    gap: 123px;
-    border: 1px solid #00AEEF;
+    padding: 64px 120px;
+    gap: 223px;
+    border: 2px solid #00AEEF;
     border-right-style: none;
     border-left-style: none;
 }
@@ -278,33 +280,45 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 488px;
-    gap: 32px;
 }
+
 .logo-footer {
     width: 183px;
+    margin-bottom: 30px;
 }
+
+.text-style-footer-subtitle {
+    font-size: 16px;
+    line-height: 120%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #424956;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 24px 0px 16px 0px;
+}
+
 .input-element {
     width: 348px;
-    height: 49px;
+    height: 45px;
+    padding-left: 12px;
     background-color: white;
     border: 1px solid #B71921;
     border-radius: 2px;
 }
-.body-xs-text {
-    font-size: 14px;
-    line-height: 150%;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: #4D515C;
-}
+
 .subscribe-btn {
     background-color: white;
     display: inline-block;
     border: 1px solid #B71921;
     border-radius: 2px;
-    padding: 16px 20px;
+    padding: 14px 22px;
     font-size: 14px;
     text-align: center;
     color: #B71921;
@@ -316,17 +330,29 @@ h2 {
     font-style: normal;
 }
 
+.text-style-body-xs {
+    font-size: 14px;
+    line-height: 150%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #4D515C;
+}
+
 .footer-container-2 {
     display: flex;
     flex-direction: row;
-    gap: 118px;
-
+    gap: 80px;
+    padding-top: 49px;
 }
-.btn-container {
+
+.footer-btn-container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
 }
+
 .footer-btn {
     background-color: white;
     display: inline-block;
@@ -338,27 +364,33 @@ h2 {
     line-height: 120%;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
 }
 
 .social-media-container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
 }
-.social-btn-container {
+
+.social-media-btn-container {
     position: relative;
     justify-content: center;
+    align-items: center;
 }
-.icon-social-media {
+
+.icon-social-media-btn {
     position: absolute;
+    width: 20px;
+    height: 20px;
 }
-.social-btn {
-    margin-left: 32px;
+
+.social-media-btn {
+    margin-left: 28px;
     background-color: white;
     display: inline-block;
-    padding: 2px 0px;
+    text-decoration: underline;
     border: none;
     text-align: start;
     color: #4D515C;
@@ -366,39 +398,39 @@ h2 {
     line-height: 120%;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
 }
 
-.document-links-container {
+.document-link-btn-container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
 }
-.link-btn {
+
+.document-link-btn {
     background-color: white;
     display: inline-block;
-    padding: 2px 0px;
     border: none;
     text-align: start;
     color: #4D515C;
     text-decoration: underline;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 120%;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
 }
 
-.all-right-container {
+.copyright-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 20px;
+    padding: 20px 0px;
 }
-.all-rigt-btn {
+
+.copyright-btn {
     background-color: white;
     display: inline-block;
     border: none;
