@@ -54,7 +54,7 @@
 
 .icon-call-btn {
     position: absolute;
-    bottom: 12px;
+    bottom: 10px;
     padding-left: 138px;
 }
 
@@ -166,7 +166,7 @@ h2 {
     color: #4D515C;
 }
 
-.paragraph-1 {
+.paragraph-top-l-body-text {
     margin-bottom: 18px;
 }
 
@@ -181,7 +181,7 @@ h2 {
     display: grid;
     gap: 40px 20px;
     grid-template-columns: repeat(4, 285px);
-    grid-template-rows: repeat(3, 431px);
+    grid-template-rows: repeat(3, 426px);
     grid-template-areas: 
     "card-1 . card-2 card-2"
     ". card-3 card-4 card-5"
@@ -227,8 +227,8 @@ h2 {
 .card-text-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-top: 16px;
+    gap: 12px;
+    margin-top: 8px;
 }
 
 .text-style-subtitle-2 {
@@ -257,6 +257,7 @@ h2 {
 
 .read-more-btn {
     display: inline-block;
+    line-height: 100%;
     text-align: center;
     background-color: white;
     border: none;
@@ -265,7 +266,7 @@ h2 {
     font-size: 14px;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
 }
 
