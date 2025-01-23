@@ -308,6 +308,81 @@ h2 {
     margin-top: 16px;
 }
 
+.view-all-btn-container {
+    margin-top: 56px;
+    padding-left: 305px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.view-all-btn {
+    display: inline-block;
+    line-height: 100%;
+    text-align: center;
+    background-color: white;
+    border: none;
+    color: #B71921;
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+.section-5 {
+    margin: 120px 120px 0px 120px;
+    display: flex;
+    flex-direction: row;
+    gap: 122px;
+    height: 640px;
+
+}
+
+.section-5-container-1 {
+    width: 488px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.read-more-btn-l-size-container {
+    margin-top: 56px;
+}
+
+.read-more-btn-l-size {
+    display: inline-block;
+    line-height: 100%;
+    text-align: center;
+    background-color: white;
+    border: none;
+    color: #B71921;
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.section-5-image-1 {
+    width: 285px;
+    margin-top: 66px;
+    height: 200px;
+}
+
+.section-5-image-2 {
+    width: 590px;
+    height: 640px;
+}
+
 
 
 .section-footer {
