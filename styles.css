@@ -28,9 +28,27 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    position: relative;
+    cursor: pointer;
 }
-
-
+.navbar-btn::after {
+    display: block;
+    content: "";
+    background-color: #424956;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .2s ease-in-out;
+    -moz--transition: width .2s ease-in-out;
+    transition: width .2s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.navbar-btn:hover::after, .navbar-btn:focus::after {
+    width: 100%;
+}
 
 .contact-btn {
     background-color: white;
@@ -524,18 +542,17 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    transition: all 0.2s ease;
+}
+.footer-btn:hover {
+    color: #02749d;
+    cursor: pointer;
 }
 
 .social-media-container {
     display: flex;
     flex-direction: column;
     gap: 16px;
-}
-
-.social-media-btn-container {
-    position: relative;
-    justify-content: center;
-    align-items: center;
 }
 
 .icon-social-media-btn {
@@ -545,7 +562,6 @@ h2 {
 }
 
 .social-media-btn {
-    margin-left: 28px;
     background-color: white;
     display: inline-block;
     text-decoration: underline;
@@ -558,7 +574,18 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    position: relative;
+    transition: all 0.2s ease;
 }
+.social-media-btn:hover {
+    color: #02749d;
+    cursor: pointer;
+}
+
+.text-social-media-btn {
+    margin-left: 28px;
+}
+
 
 .document-link-btn-container {
     display: flex;
@@ -579,6 +606,11 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    transition: all 0.2s ease;
+}
+.document-link-btn:hover {
+    color: #02749d;
+    cursor: pointer;
 }
 
 .copyright-container {
