@@ -1,3 +1,111 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('./fonts/Oswald-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --subtitle-color: #424956;
+    --text-color: #4D515C;
+    --button-primary: #B71921;
+    --button-hover: #D2030E;
+    --white-color: #ffffff;
+
+    --border-radius: 2px;
+    --border: 1px solid #B71921;
+
+    --font-family-heading: "Oswald", sans-serif;
+    --font-family-body: "Raleway", sans-serif;
+}
+
+.primary-btn {
+    background-color: var(--button-primary);
+    color: var(--white-color);
+}
+
+.secondary-btn {
+    background: none;
+    border: var(--border);
+    color: var(--button-primary);
+}
+
+.link-btn {
+    background: none;
+    border: none;
+    color: var(--button-primary);
+    text-decoration: underline;
+}
+
+.xl-btn {
+    display: inline-flex;
+    align-items: center;
+    height: 59px;
+    font-family: var(--font-family-body);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+    border-radius: var(--border-radius);
+    white-space: nowrap;
+}
+
+.l-btn {
+    display: inline-flex;
+    align-items: center;
+    height: 49px;
+    font-family: var(--font-family-body);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+    background: none;
+    border-radius: var(--border-radius);
+    white-space: nowrap;
+}
+.m-btn {
+    display: inline-flex;
+    align-items: center;
+    height: 38px;
+    font-family: var(--font-family-body);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+    border-radius: var(--border-radius);
+    white-space: nowrap;
+}
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,87 +113,63 @@
     overflow: visible;
 }
 
-
-.section-navbar {
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 120px 12px 120px;
+    padding: 12px 120px;
     background-color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: lightblue;
 }
 
-.logo {
-    cursor: pointer;
+.header-logo {
+    flex-shrink: 0;
 }
 
-.navbar-btn-container {
+.header-navbar-list {
     display: flex;
     flex-direction: row;
-    gap: 84px;
+    column-gap: 84px;
+    list-style: none;
 }
 
-.navbar-btn {
-    background-color: white;
-    border: none;
-    color: #424956;
+.header-navbar-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-family-heading);
     font-size: 16px;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
     position: relative;
-    cursor: pointer;
 }
-.navbar-btn::after {
-    display: block;
+.header-navbar-link::after {
     content: "";
-    background-color: #424956;
+    display: block;
     height: 1.5px;
     width: 0%;
-    left: 50%;
+    background-color: var(--text-color);
     position: absolute;
-    -webkit-transition: width .2s ease-in-out;
-    -moz--transition: width .2s ease-in-out;
-    transition: width .2s ease-in-out;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
+    left: 50%;
+    bottom: -4px;
     transform: translateX(-50%);
+    transition: width 0.2s ease-in-out;
 }
-.navbar-btn:hover::after, .navbar-btn:focus::after {
+.header-navbar-link:hover::after,
+.header-navbar-link:focus::after {
     width: 100%;
 }
 
-.contact-btn {
-    background-color: white;
-    border: 1px solid #B71921;
-    border-radius: 2px;
-    color: #B71921;
-    padding: 12px 40px 12px 40px;
-    text-align: center;
-    display: flex;
+.contact-button {
+    padding-inline: 40px;
     gap: 8px;
-    align-items: center;
-    font-size: 12px;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 120%;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
     transition: background-color 0.3s ease;
-    box-sizing: border-box;
 }
-.contact-btn:hover {
+.contact-button:hover {
     outline: 0.2px solid #D2030E;
 }
-
-
 
 .hero-section-1 {
     display: flex;
@@ -93,6 +177,7 @@
     margin: 24px 120px 0px 120px;
     gap: 102px;
     align-items: center;
+    background-color: pink;
 }
 
 .hero-container-1 {
