@@ -155,6 +155,14 @@
     color: var(--text-color);
 }
 
+.text-style-body-xs {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: var(--font-family-body);
+    color: var(--text-color);
+}
+
 .margin-section {
     margin: 120px 120px 0px 120px;
 }
@@ -248,7 +256,7 @@
 }
 
 .how-it-work-button {
-    margin-top: 56px;
+    margin-top: 60px;
     padding: 20px 64px;
     transition: background-color 0.2s ease;
 }
@@ -319,11 +327,13 @@
 }
 
 .narrow-image {
-    max-width: 285px;
+    width: 100%;
+    display: block;
 }
 
 .wide-image {
-    max-width: 590px;
+    width: 100%;
+    display: block;
 }
 
 .card-info {
@@ -344,68 +354,49 @@
 
 
 
-.section-4 {
-    margin: 120px 120px 0px 120px;
-}
-
 .news-cards-container {
     display: flex;
     flex-direction: row;
+    justify-content: end;
     gap: 20px;
-    margin-top: 48px;
-    padding-left: 305px;
 }
 
 .news-card {
-    width: 285px;
+    max-width: 285px;
 }
 
 .news-image {
-    width: 285px;
+    width: 100%;
+    display: block;
 }
 
-.news-data-and-subtitle-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.news-data {
     margin-top: 8px;
 }
 
-.news-description-wrapper {
+.news-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 16px;
+}
+
+.line-clamp {
     line-clamp: auto;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    margin-top: 16px;
 }
 
-.view-all-btn-container {
-    margin-top: 56px;
-    padding-left: 305px;
-}
-
-.view-all-btn {
-    display: flex;
-    line-height: 100%;
-    text-align: center;
-    align-items: center;
+.view-all-button {
+    margin: 56px 0 0 305px;
     gap: 8px;
-    background-color: white;
-    border: none;
-    color: #B71921;
-    text-decoration: underline;
-    font-size: 16px;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    cursor: pointer;
     transition: background-color 0.2s ease;
-    position: relative;
 }
-.view-all-btn:hover {
-    color: #D2030E;
+
+.view-all-button:hover {
+    color: var(--button-hover);
 }
 
 
@@ -543,16 +534,6 @@
 }
 .subscribe-btn:hover {
     outline: 0.2px solid #D2030E;
-}
-
-.text-style-body-xs {
-    font-size: 14px;
-    line-height: 150%;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: #4D515C;
 }
 
 .footer-container-2 {
