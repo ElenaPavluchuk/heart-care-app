@@ -66,8 +66,6 @@
 .xl-btn {
     display: inline-flex;
     align-items: center;
-    height: 59px;
-    margin-top: 56px;
     font-family: var(--font-family-body);
     font-size: 16px;
     font-weight: 600;
@@ -80,7 +78,6 @@
 .l-btn {
     display: inline-flex;
     align-items: center;
-    height: 49px;
     font-family: var(--font-family-body);
     font-size: 14px;
     font-weight: 600;
@@ -93,7 +90,6 @@
 .m-btn {
     display: inline-flex;
     align-items: center;
-    height: 38px;
     font-family: var(--font-family-body);
     font-size: 12px;
     font-weight: 600;
@@ -109,9 +105,10 @@
     font-weight: 400;
     font-family: var(--font-family-heading);
     color: var(--subtitle-color);
+    margin-bottom: 48px;
 }
 
-.subtitle-h2 {
+.title-h2 {
     font-size: 48px;
     line-height: 120%;
     font-weight: 400;
@@ -119,6 +116,15 @@
     color: var(--subtitle-color);
     text-indent: -50px;
     padding-left: 50px;
+    margin-bottom: 48px;
+}
+
+.text-style-subtitle-h1 {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 600;
+    font-family: var(--font-family-body);
+    color: var(--subtitle-color);
 }
 
 .text-style-body-l {
@@ -141,8 +147,12 @@
     font-family: var(--font-family-body);
 }
 
-.margin-subtitle {
-    margin-bottom: 48px;
+.text-style-body-s {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: var(--font-family-body);
+    color: var(--text-color);
 }
 
 .margin-section {
@@ -213,9 +223,9 @@
 }
 
 .contact-button {
-    padding-inline: 40px;
+    padding: 9px 40px;
     gap: 8px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 .contact-button:hover {
     outline: 0.2px solid var(--button-hover);
@@ -238,8 +248,9 @@
 }
 
 .how-it-work-button {
-    padding-inline: 64px;
-    transition: background-color 0.3s ease;
+    margin-top: 56px;
+    padding: 20px 64px;
+    transition: background-color 0.2s ease;
 }
 .how-it-work-button:hover {
     background-color: var(--button-hover);
@@ -268,12 +279,7 @@
 
 
 
-.section-3 {
-    margin: 120px 120px 0px 120px;
-}
-
 .grid-container-section-3 {
-    margin-top: 48px;
     display: grid;
     gap: 40px 20px;
     grid-template-columns: repeat(4, 285px);
@@ -313,62 +319,27 @@
 }
 
 .narrow-image {
-    width: 285px;
+    max-width: 285px;
 }
 
 .wide-image {
-    width: 590px;
+    max-width: 590px;
 }
 
-.card-text-wrapper {
+.card-info {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-top: 8px;
 }
 
-.text-style-subtitle-2 {
-    font-size: 18px;
-    line-height: 120%;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    color: #424956;
-}
-
-.text-style-body-s {
-    font-size: 16px;
-    line-height: 150%;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: #4D515C;
-}
-
-.read-more-btn-container {
+.read-more-button {
     margin-top: 20px;
-}
-
-.read-more-btn {
-    display: inline-block;
-    line-height: 100%;
-    text-align: center;
-    background-color: white;
-    border: none;
-    color: #B71921;
-    text-decoration: underline;
-    font-size: 14px;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    cursor: pointer;
     transition: background-color 0.2s ease;
 }
-.read-more-btn:hover {
-    color: #D2030E;
+
+.read-more-button:hover {
+    color: var(--button-hover);
 }
 
 
