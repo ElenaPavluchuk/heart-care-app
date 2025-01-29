@@ -234,10 +234,12 @@
     padding: 9px 40px;
     gap: 8px;
     transition: background-color 0.2s ease;
+
+    &:hover {
+        outline: 0.2px solid var(--button-hover);
+    }
 }
-.contact-button:hover {
-    outline: 0.2px solid var(--button-hover);
-}
+
 
 
 
@@ -245,8 +247,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 24px 120px 0px 120px;
     justify-content: space-between;
+    margin: 24px 120px 0px 120px;
 }
 
 .hero-container-1 {
@@ -257,11 +259,13 @@
 
 .how-it-work-button {
     margin-top: 60px;
+    max-width: 240px;
     padding: 20px 64px;
     transition: background-color 0.2s ease;
-}
-.how-it-work-button:hover {
-    background-color: var(--button-hover);
+
+    &:hover {
+        background-color: var(--button-hover);
+    }
 }
 
 .hero-container-2 {
@@ -269,8 +273,8 @@
 }
 
 .hero-image {
-    width: 100%;
     display: block;
+    width: 100%;
 }
 
 
@@ -327,13 +331,13 @@
 }
 
 .narrow-image {
-    width: 100%;
     display: block;
+    width: 100%;
 }
 
 .wide-image {
-    width: 100%;
     display: block;
+    width: 100%;
 }
 
 .card-info {
@@ -346,10 +350,10 @@
 .read-more-button {
     margin-top: 20px;
     transition: background-color 0.2s ease;
-}
 
-.read-more-button:hover {
-    color: var(--button-hover);
+    &:hover {
+        color: var(--button-hover);
+    }
 }
 
 
@@ -366,8 +370,8 @@
 }
 
 .news-image {
-    width: 100%;
     display: block;
+    width: 100%;
 }
 
 .news-data {
@@ -393,66 +397,50 @@
     margin: 56px 0 0 305px;
     gap: 8px;
     transition: background-color 0.2s ease;
-}
 
-.view-all-button:hover {
-    color: var(--button-hover);
+    &:hover {
+        color: var(--button-hover);
+    }
 }
 
 
 
 .section-5 {
-    margin: 120px 120px 0px 120px;
     display: flex;
     flex-direction: row;
-    gap: 122px;
-    height: 640px;
-
+    justify-content: space-between;
 }
 
 .section-5-container-1 {
-    width: 488px;
+    max-width: 488px;
 }
 
-.text-container {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-}
-
-.read-more-btn-l-size-container {
+.learn-details-button {
     margin-top: 56px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        color: var(--button-hover);
+    }
 }
 
-.read-more-btn-l-size {
-    display: inline-block;
-    line-height: 100%;
-    text-align: center;
-    background-color: white;
-    border: none;
-    color: #B71921;
-    text-decoration: underline;
-    font-size: 16px;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-.read-more-btn-l-size:hover {
-    color: #D2030E;
+.section-5-image-1-container {
+    max-width: 285px;
+    margin-top: 66px;
 }
 
 .section-5-image-1 {
-    width: 285px;
-    margin-top: 66px;
-    height: 200px;
+    display: block;
+    width: 100%;
+}
+
+.section-5-container-2 {
+    max-width: 590px;
 }
 
 .section-5-image-2 {
-    width: 590px;
-    height: 640px;
+    display: block;
+    width: 100%;
 }
 
 
