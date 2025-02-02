@@ -261,6 +261,17 @@
     }
 }
 
+.phone-icon path {
+    transition: fill 0.2s ease;
+}
+
+.contact-button:hover .phone-icon path {
+    fill: var(--button-hover);
+    stroke: var(--button-hover);
+    opacity: 98%;
+}
+
+
 
 .hero-section-1 {
     display: flex;
@@ -420,6 +431,24 @@
     &:hover {
         color: var(--button-hover);
     }
+}
+
+.view-icon path {
+    transition: fill 0.2 ease;
+}
+
+.view-all-button:hover .view-icon path {
+    fill: var(--white-color);
+}
+
+.view-icon circle {
+    transition: fill 0.2 ease, stroke 0.2 ease;
+}
+
+.view-all-button:hover .view-icon circle {
+    fill: var(--button-hover);
+    stroke: var(--button-hover);
+    opacity: 98%;
 }
 
 
