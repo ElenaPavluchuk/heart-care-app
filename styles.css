@@ -111,6 +111,11 @@
     font-family: var(--font-family-heading);
     color: var(--subtitle-color);
     margin-bottom: 48px;
+    text-wrap: pretty;
+}
+
+.red-word-title {
+    color: var(--button-primary);
 }
 
 .title-h2 {
@@ -122,6 +127,7 @@
     text-indent: -50px;
     padding-left: 50px;
     margin-bottom: 48px;
+    text-wrap: pretty;
 }
 
 .text-style-subtitle-h1 {
@@ -130,6 +136,7 @@
     font-weight: 600;
     font-family: var(--font-family-body);
     color: var(--subtitle-color);
+    text-wrap: pretty;
 }
 
 .text-style-subtitle-h2 {
@@ -138,6 +145,7 @@
     font-weight: 600;
     font-family: var(--font-family-body);
     color: var(--subtitle-color);
+    text-wrap: pretty;
 }
 
 .text-style-body-l {
@@ -146,6 +154,7 @@
     font-weight: 400;
     font-family: var(--font-family-body);
     color: var(--text-color);
+    text-wrap: pretty;
 }
 
 .body-l-paragraph-spacing {
@@ -158,6 +167,7 @@
     font-weight: 400;
     color: var(--text-color);
     font-family: var(--font-family-body);
+    text-wrap: pretty;
 }
 
 .text-style-body-s {
@@ -166,6 +176,7 @@
     font-weight: 400;
     font-family: var(--font-family-body);
     color: var(--text-color);
+    text-wrap: pretty;
 }
 
 .text-style-body-xs {
@@ -174,6 +185,7 @@
     font-weight: 400;
     font-family: var(--font-family-body);
     color: var(--text-color);
+    text-wrap: pretty;
 }
 
 .input {
@@ -186,7 +198,7 @@
 }
 
 .margin-section {
-    margin: 120px 120px 0px 120px;
+    margin: 120px 120px 0 120px;
 }
 
 .visually-hidden {
@@ -259,10 +271,11 @@
     width: 184px;
     height: 38px;
     padding-left: 54px;
-    transition: outline 0.3s ease, padding-left 0.3s ease, transform 0.2s ease;
+    transition: color 0.3s ease, outline 0.3s ease, padding-left 0.3s ease, transform 0.2s ease;
     overflow: hidden;
 
     &:hover {
+        color: var(--button-hover);
         outline: 0.1px solid var(--button-hover);
         padding-left: 40px;
     }
@@ -271,7 +284,6 @@
         transform: scale(0.95);
     }
 }
-
 
 .phone-icon {
     position: absolute;
@@ -399,7 +411,7 @@
 
 .read-more-button {
     margin-top: 20px;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 
     &:hover {
         color: var(--button-hover);
@@ -446,7 +458,7 @@
 .view-all-button {
     margin: 56px 0 0 305px;
     gap: 8px;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 
     &:hover {
         color: var(--button-hover);
@@ -467,7 +479,7 @@
 
 .learn-details-button {
     margin-top: 56px;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 
     &:hover {
         color: var(--button-hover);
@@ -574,7 +586,7 @@
     font-family: var(--font-family-body);
     font-size: 16px;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 
     &:hover {
         color: var(--blue-accent);
@@ -597,7 +609,7 @@
     font-family: var(--font-family-body);
     font-size: 16px;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 
     &:hover {
         color: var(--blue-accent);
@@ -617,7 +629,7 @@
     font-family: var(--font-family-body);
     font-size: 14px;
     font-weight: 400;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 
     &:hover {
         color: var(--blue-accent);
