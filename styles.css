@@ -323,9 +323,9 @@
     max-width: 590px;
 }
 
-.how-it-work-button {
+.how-it-works-button {
     margin-top: 60px;
-    max-width: 240px;
+    max-width: 249px;
     padding: 20px 64px;
     transition: background-color 0.3s ease, color 0.3s ease, outline 0.3s ease, transform 0.2s ease;
 
