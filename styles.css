@@ -222,6 +222,8 @@
   scroll-behavior: smooth;
 }
 
+/* header */
+
 .header {
   display: flex;
   flex-direction: row;
@@ -238,6 +240,11 @@
 .header-logo {
   flex-shrink: 0;
   background-color: pink;
+}
+
+.burger-icon {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .header-navbar-list {
@@ -295,20 +302,6 @@
   &:active {
     transform: scale(0.95);
   }
-
-  @media (max-width: 1024px) {
-    cursor: default;
-
-    &:hover {
-      color: inherit;
-      outline: none;
-      padding-left: 54px;
-    }
-
-    &:active {
-      transform: none;
-    }
-  }
 }
 
 .phone-icon {
@@ -337,11 +330,6 @@
   .header {
     padding: 12px 40px;
   }
-
-  .contact-button:hover .phone-icon {
-    right: -30px;
-    opacity: 0;
-  }
 }
 
 @media (max-width: 900px) {
@@ -351,8 +339,38 @@
 }
 
 @media (max-width: 770px) {
+  .burger-header {
+    background-color: paleturquoise;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .burger-icon {
+    visibility: visible;
+    opacity: 1;
+    background-color: pink;
+  }
+
   .header-navbar-list {
-    display: none;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    border-top: 1px solid var(--blue-accent);
+    transform-origin: top;
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  .header-navbar-link {
+    font-size: 18px;
   }
 }
 
@@ -361,6 +379,8 @@
     padding: 8px 20px;
   }
 }
+
+/* section 1 */
 
 .hero-section-1 {
   display: flex;
@@ -483,6 +503,8 @@
   }
 }
 
+/* section 2 */
+
 .section-2 {
   display: flex;
   flex-direction: row;
@@ -494,6 +516,8 @@
 .section-2-container-2 {
   max-width: 590px;
 }
+
+/* section 3 */
 
 .section-3 {
   scroll-margin-top: 80px;
@@ -617,13 +641,15 @@
   }
 }
 
+/* section 4 */
+
 .section-4 {
   scroll-margin-top: 80px;
   background-color: lightblue;
 }
 
 .section-4-content-wrapper {
-  background-color: tomato;
+  background-color: palegoldenrod;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -648,6 +674,7 @@
 
 .news-card {
   max-width: 285px;
+  background-color: lightblue;
 }
 
 .news-image {
@@ -657,6 +684,7 @@
 
 .news-data {
   margin-top: 8px;
+  background-color: lightgray;
 }
 
 .news-info {
@@ -664,6 +692,7 @@
   flex-direction: column;
   margin-top: 12px;
   gap: 16px;
+  background-color: coral;
 }
 
 .line-clamp {
@@ -682,6 +711,8 @@
     color: var(--button-hover);
   }
 }
+
+/* section 5 */
 
 .section-5 {
   display: flex;
@@ -742,6 +773,8 @@
     width: 0;
   }
 }
+
+/* footer */
 
 .footer-main {
   display: flex;
