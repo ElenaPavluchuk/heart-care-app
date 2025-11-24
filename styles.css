@@ -1193,3 +1193,84 @@ footer {
     max-height: 38px;
   }
 }
+
+/* popup styles */
+#heart-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#heart-popup.show {
+  display: flex;
+  opacity: 1;
+}
+
+#heart-popup .popup {
+  background: white;
+  max-width: 520px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 32px 28px;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  animation: slideDown 0.35s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-text {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+
+.popup-close-x {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 32px;
+  color: var(--header-line);
+  cursor: pointer;
+  line-height: 1;
+}
+.popup-close-x:hover {
+  color: var(--button-hover);
+}
+
+.close-btn {
+  margin-top: 24px;
+  background: var(--button-default);
+  color: var(--white);
+  border: none;
+  padding: 12px 28px;
+  font-size: 14px;
+}
+.close-btn:hover {
+  background: var(--button-hover);
+}
+
+@media (max-width: 480px) {
+  #heart-popup .popup {
+    padding: 24px 20px;
+  }
+}
