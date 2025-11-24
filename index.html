@@ -58,7 +58,7 @@
           </ul>
         </nav>
 
-        <button class="contact-button button-style">
+        <button class="contact-button button-style" data-open-popup>
           <span>Contact us</span>
           <svg
             class="phone-icon"
@@ -97,7 +97,7 @@
             in&nbsp;our&nbsp;community
           </p>
           <div>
-            <button class="how-it-works-button button-style">
+            <button class="how-it-works-button button-style" data-open-popup>
               How it works
             </button>
           </div>
@@ -144,7 +144,9 @@
                 Use 3D-printed heart models
               </p>
             </div>
-            <button class="read-more-button button-style">Read more</button>
+            <button class="read-more-button button-style" data-open-popup>
+              Read more
+            </button>
           </div>
 
           <div class="card-2">
@@ -157,7 +159,9 @@
                 Smartwatches and other devices
               </p>
             </div>
-            <button class="read-more-button button-style">Read more</button>
+            <button class="read-more-button button-style" data-open-popup>
+              Read more
+            </button>
           </div>
 
           <div class="card-3">
@@ -168,7 +172,9 @@
                 Solution to underserved community
               </p>
             </div>
-            <button class="read-more-button button-style">Read more</button>
+            <button class="read-more-button button-style" data-open-popup>
+              Read more
+            </button>
           </div>
 
           <div class="card-4">
@@ -181,7 +187,9 @@
                 Technologies for heart surgeries
               </p>
             </div>
-            <button class="read-more-button button-style">Read more</button>
+            <button class="read-more-button button-style" data-open-popup>
+              Read more
+            </button>
           </div>
 
           <div class="card-5">
@@ -194,7 +202,9 @@
                 Genetic screenings for prevention
               </p>
             </div>
-            <button class="read-more-button button-style">Read more</button>
+            <button class="read-more-button button-style" data-open-popup>
+              Read more
+            </button>
           </div>
 
           <div class="card-6">
@@ -205,7 +215,9 @@
                 Wearable devices and mobile apps
               </p>
             </div>
-            <button class="read-more-button button-style">Read more</button>
+            <button class="read-more-button button-style" data-open-popup>
+              Read more
+            </button>
           </div>
 
           <div class="card-7">
@@ -216,7 +228,9 @@
                 AI-driven tools for analyzing
               </p>
             </div>
-            <button class="read-more-button button-style">Read more</button>
+            <button class="read-more-button button-style" data-open-popup>
+              Read more
+            </button>
           </div>
         </div>
       </section>
@@ -245,7 +259,9 @@
                 is open to all fitness levels and starts at 6 PM.
               </p>
             </div>
-            <button class="read-more-button button-style">Read more</button>
+            <button class="read-more-button button-style" data-open-popup>
+              Read more
+            </button>
           </article>
 
           <article class="news-card-2-area">
@@ -265,7 +281,9 @@
                 could be featured in our upcoming Heart Health Cookbook.
               </p>
             </div>
-            <button class="read-more-button button-style">Read more</button>
+            <button class="read-more-button button-style" data-open-popup>
+              Read more
+            </button>
           </article>
 
           <article class="news-card-3-area">
@@ -285,10 +303,15 @@
                 health.
               </p>
             </div>
-            <button class="read-more-button button-style">Read more</button>
+            <button class="read-more-button button-style" data-open-popup>
+              Read more
+            </button>
           </article>
 
-          <button class="view-all-button button-style view-all-btn-area">
+          <button
+            class="view-all-button button-style view-all-btn-area"
+            data-open-popup
+          >
             <svg
               class="view-icon"
               viewBox="0 0 65 65"
@@ -323,7 +346,7 @@
               on&nbsp;the&nbsp; principles of&nbsp;compassion
               and&nbsp;prevention medicine
             </p>
-            <button class="learn-details-button button-style">
+            <button class="learn-details-button button-style" data-open-popup>
               Learn details
             </button>
           </div>
@@ -353,12 +376,14 @@
               type="email"
               placeholder="Enter your email"
             />
-            <button class="subscribe-button button-style">Subscribe</button>
+            <button class="subscribe-button button-style" data-open-popup>
+              Subscribe
+            </button>
           </form>
           <p class="subscribe-description body-text-style">
             By subscribing you agree to with our
-            <span class="privacy-policy">Privacy Policy</span> and provide
-            consent to&nbsp;receive updates from our company
+            <span class="privacy-policy" data-open-popup>Privacy Policy</span>
+            and provide consent to&nbsp;receive updates from our company
           </p>
         </div>
 
@@ -380,7 +405,7 @@
 
           <ul class="footer-link-container">
             <li>
-              <a class="social-media-link" href="/">
+              <a class="social-media-link" href="" data-open-popup>
                 <svg
                   width="20"
                   height="20"
@@ -407,7 +432,7 @@
               </a>
             </li>
             <li>
-              <a class="social-media-link" href="/">
+              <a class="social-media-link" href="" data-open-popup>
                 <svg
                   width="20"
                   height="20"
@@ -437,10 +462,14 @@
 
           <ul class="footer-link-container">
             <li>
-              <a class="document-link" href="/">Privacy policy</a>
+              <a class="document-link" href="" data-open-popup
+                >Privacy policy</a
+              >
             </li>
             <li>
-              <a class="document-link" href="/">Cookies settings</a>
+              <a class="document-link" href="" data-open-popup
+                >Cookies settings</a
+              >
             </li>
           </ul>
         </div>
@@ -452,5 +481,29 @@
         </p>
       </div>
     </footer>
+
+    <div id="heart-popup" class="popup-overlay">
+      <div class="popup">
+        <span class="popup-close-x" data-open-popup>×</span>
+        <h2 class="title-h3">You will find out about it very soon</h2>
+        <p class="body-text-style popup-text">
+          We are a non-profit organization dedicated to protecting heart health
+          and preventing cardiovascular diseases worldwide. Our mission is to
+          raise awareness, fund groundbreaking research, and provide support to
+          patients and their families
+        </p>
+        <p class="body-text-style">
+          <strong class="title-h4"
+            >The website is currently under development</strong
+          ><br />
+          Detailed information about our programs, donation options, and
+          upcoming events will be available very soon. Thank you for your
+          understanding and support!
+        </p>
+
+        <button class="close-btn button-style" data-open-popup>Close</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
